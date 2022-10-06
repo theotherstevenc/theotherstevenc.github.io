@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>figures</title>
+</head>
+<body>
+  <p>the fig caption tag is announced by the screen reader when navigated to the figure element</p>
+
+  <figure>
+    <img src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/elephant-660-480.jpg"
+         alt="semantic. silhouette of an elephant walking against a sunset with an orange sky full of birds">
+    <figcaption>fig caption, figure tag: an elephant at sunset</figcaption>
+  </figure>
+
+  <p>an alternative is adding role figure. in this example, it is anounced as aria label</p>
+
+  <div role="figure" aria-label="aria label: element with role figure: an elephant at sunset">
+
+    <img src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/elephant-660-480.jpg"
+         alt="alternative. silhouette of an elephant walking against a sunset with an orange sky full of birds">
+    
+    <div>element with role figure: an elephant at sunset</div>
+    
+  </div>
+
+</body>
+</html>
